@@ -35,7 +35,7 @@ Use [VSCode Remote - Containers extension](https://marketplace.visualstudio.com/
 
 ### Setup first bench
 
-Downgrade Node Version using NVM, because ERPNext only support Node Version 10
+Downgrade Node Version using NVM, because ERPNext 11 only support Node Version 10
 ```shell
 nvm use v10.24.1
 ```
