@@ -37,6 +37,7 @@ Use [VSCode Remote - Containers extension](https://marketplace.visualstudio.com/
 
 Downgrade Node Version using NVM, because ERPNext 11 only support Node Version 10
 ```shell
+nvm install v10.24.1
 nvm use v10.24.1
 nvm alias default v10.24.1
 ```
