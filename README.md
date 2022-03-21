@@ -1,4 +1,4 @@
-# Install ERP Next 11 on Latest Frappe Docker
+# Install ERPNext 11 on Latest Frappe Docker
 
 ## Prerequisites
 
