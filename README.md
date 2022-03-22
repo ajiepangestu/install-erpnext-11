@@ -45,7 +45,7 @@ nvm alias default v10.24.1
 Run the following commands in the terminal inside the container. You might need to create a new terminal in VSCode.
 
 ```shell
-bench init --skip-redis-config-generation --frappe-branch version-11 frappe-bench
+bench init --skip-redis-config-generation --frappe-branch version-11 --python python3.7 frappe-bench
 cd frappe-bench
 ```
 
@@ -89,11 +89,11 @@ Create new Site
 ```shell
 bench new-site mysite.localhost --mariadb-root-password 123 --admin-password admin --no-mariadb-socket
 ```
-To install custom app
+To install ERPNext 11
 
 ```shell
-bench get https://github.com/myusername/myapp
-bench --site mysite.localhost install-app myapp
+bench get --branch version-11 erpnext
+bench --site mysite.localhost install-app erpnext
 ```
 
 Remove ```frappe-bench``` package to avoid dependencies conflicts
