@@ -79,7 +79,7 @@ We will get error on command: ```bench new-site```, because we have different fr
 
 Activate environment
 ```shell
-source env/bin/activate
+. /workspace/development/frappe-bench/env/bin/activate
 ```
 Install latest bench (It will got error, because some dependencies conflict. No problem, frappe-bench will be removed after we create our site)
 ```shell
@@ -99,6 +99,12 @@ bench --site mysite.localhost install-app myapp
 Remove ```frappe-bench``` package to avoid dependencies conflicts
 ```shell
 pip uninstall frappe-bench
+```
+
+Exit from python environment
+
+```
+deactivate
 ```
 
 ### Start Frappe without debugging
