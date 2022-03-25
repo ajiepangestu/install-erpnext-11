@@ -96,6 +96,13 @@ bench get --branch version-11 erpnext
 bench --site mysite.localhost install-app erpnext
 ```
 
+### Set bench developer mode on the new site
+To develop a new app, the last step will be setting the site into developer mode.
+```shell
+bench --site mysite.localhost set-config developer_mode 1
+bench --site mysite.localhost clear-cache
+```
+
 Remove ```frappe-bench``` package to avoid dependencies conflicts
 ```shell
 pip uninstall frappe-bench
