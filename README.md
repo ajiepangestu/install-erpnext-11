@@ -87,20 +87,20 @@ pip install frappe-bench
 ```
 Create new Site
 ```shell
-bench new-site mysite.localhost --mariadb-root-password 123 --admin-password admin --no-mariadb-socket
+env/bin/bench new-site localhost --mariadb-root-password 123 --admin-password admin --no-mariadb-socket
 ```
 To install ERPNext 11
 
 ```shell
-bench get --branch version-11 erpnext
-bench --site mysite.localhost install-app erpnext
+env/bin/bench get --branch version-11 erpnext
+env/bin/bench --site localhost install-app erpnext
 ```
 
 ### Set bench developer mode on the new site
 To develop a new app, the last step will be setting the site into developer mode.
 ```shell
-bench --site mysite.localhost set-config developer_mode 1
-bench --site mysite.localhost clear-cache
+env/bin/bench --site mysite.localhost set-config developer_mode 1
+env/bin/bench --site mysite.localhost clear-cache
 ```
 
 Remove ```frappe-bench``` package to avoid dependencies conflicts
